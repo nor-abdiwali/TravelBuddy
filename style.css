@@ -1,3 +1,29 @@
+/* ========================================
+   TRAVELBUDDY - MAIN STYLESHEET
+   ========================================
+   
+   TABLE OF CONTENTS:
+   1. Global Styles
+   2. Header & Navigation
+   3. Hero Section (Discover)
+   4. Search Options
+   5. Top Places Section
+   6. Testimonials Section
+   7. Event Section
+   8. Footer
+   9. About Page Styles
+   10. Place Page Styles
+   11. Contact Page Styles
+   12. Booking & Payment Styles
+   13. Responsive Styles
+       - Tablet (761px - 1024px)
+       - Mobile (max 760px)
+   ======================================== */
+
+/* ========================================
+   1. GLOBAL STYLES
+   ======================================== */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -6,6 +32,10 @@
 body {
     background-color: #F3F3F3;
 }
+
+/* ========================================
+   2. HEADER & NAVIGATION
+   ======================================== */
 
 .header {
     display: flex;
@@ -16,12 +46,20 @@ body {
 }
 
 
-.menu{
+.menu {
     display: none;
     position: absolute;
     top: 60px;
     right: 40px;
     font-size: 30px;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #041562;
+    cursor: pointer;
 }
 
 
@@ -87,16 +125,16 @@ body {
 
 
 
-.header li{
+.header li {
     background: #f5f5f5;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.header li:hover{
+.header li:hover {
     transform: translateY(-5px) scale(1.05);
     background: rgb(255, 228, 198);
     color: white;
@@ -106,6 +144,10 @@ body {
 .header ul li a {
     text-decoration: none;
     color: #696969;
+}
+
+.mobile-only {
+    display: none;
 }
 
 .header button {
@@ -120,14 +162,14 @@ body {
 
 
 
-.header button{
+.header button {
     background: #FF5403;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.header button:hover{
+.header button:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
     background: #FF5403;
@@ -211,14 +253,14 @@ body {
 }
 
 
-.Discover button{
+.Discover button {
     background: #FF5403;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.Discover button:hover{
+.Discover button:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
     background: #FF5403;
@@ -344,16 +386,16 @@ body {
 
 
 
-.images img{
+.images img {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.images img:hover{
+.images img:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -373,16 +415,16 @@ body {
 
 
 
-.images2 img{
+.images2 img {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.images2 img:hover{
+.images2 img:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -397,7 +439,7 @@ body {
     border-radius: 15px;
 }
 
-.section-3{
+.section-3 {
     animation: section3 3s;
 
 }
@@ -417,16 +459,16 @@ body {
 
 
 
-.section-3 button{
+.section-3 button {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.section-3 button:hover{
+.section-3 button:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .section-3 button a {
@@ -453,16 +495,16 @@ body {
 
 
 
-.icon1{
+.icon1 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.icon1:hover{
+.icon1:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .icon2 {
@@ -476,16 +518,16 @@ body {
 
 
 
-.icon2{
+.icon2 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.icon2:hover{
+.icon2:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -512,16 +554,16 @@ body {
 }
 
 
-.small-text{
+.small-text {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.small-text:hover{
+.small-text:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .small-text span {
@@ -574,16 +616,16 @@ body {
 }
 
 
-.background-text{
+.background-text {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.background-text:hover{
+.background-text:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .background-text h4 {
@@ -633,16 +675,16 @@ body {
 }
 
 
-.left-icon{
+.left-icon {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.left-icon:hover{
+.left-icon:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -662,16 +704,16 @@ body {
 
 }
 
-.right-icon{
+.right-icon {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.right-icon:hover{
+.right-icon:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .footer {
@@ -711,7 +753,7 @@ body {
 }
 
 
-.text2 p a{
+.text2 p a {
     text-decoration: none;
     color: white;
 }
@@ -753,72 +795,262 @@ body {
 }
 
 
+/* ========================================
+   13. RESPONSIVE STYLES
+   ======================================== */
+
+/* ----------------------------------------
+   TABLET STYLES (761px - 1024px)
+   ---------------------------------------- */
+
+/* Tablet Responsiveness */
+@media (min-width: 761px) and (max-width: 1024px) {
+    .header {
+        margin: 30px 40px;
+    }
+
+    .Discover {
+        top: 180px;
+        left: 5%;
+        width: 90%;
+    }
+
+    .Discover h1 {
+        font-size: 72px;
+        margin-left: 40px;
+    }
+
+    .Discover p {
+        margin-left: 40px;
+        font-size: 16px;
+    }
+
+    .Discover button {
+        margin-left: 40px;
+    }
+
+    .options {
+        width: 85%;
+        left: 7.5%;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .choose {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .choose-place {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .section-3 {
+        margin-top: 100px;
+    }
+
+    .images,
+    .images2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .images img,
+    .images2 img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .section-3 button {
+        margin-left: 0;
+        display: block;
+        margin: 40px auto;
+    }
+
+    .section4 {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .big-liido {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 30px;
+    }
+
+    .small-text {
+        width: 70%;
+        max-width: 600px;
+    }
+
+    .second-cover-image {
+        margin-top: 80px;
+    }
+
+    .second-cover-image img {
+        height: 500px;
+    }
+
+    .background-text {
+        position: absolute;
+        top: 2600px;
+        left: 15%;
+        width: 70%;
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .flex-icon {
+        top: 2750px;
+    }
+
+    .left-icon {
+        left: 5%;
+    }
+
+    .right-icon {
+        left: auto;
+        right: 5%;
+    }
+
+    .footer {
+        margin-top: 80px;
+    }
+
+    .footer2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .text1 img {
+        margin-left: 0;
+    }
+}
+
+/* ----------------------------------------
+   MOBILE STYLES (max 760px)
+   ---------------------------------------- */
 
 @media (max-width: 760px) {
     .header {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 15px 25px;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .header.active {
+        background-color: white;
     }
 
     .flex-logo-text {
-        margin-left: 25px;
+        margin-left: 0;
     }
 
-    .menu{
+    .header button {
+        display: none;
+    }
+
+    .mobile-only {
         display: block;
     }
 
+    .menu-toggle {
+        display: block;
+        position: static;
+        /* Let flex handle alignment */
+    }
+
     .header ul {
+        display: none;
         flex-direction: column;
         padding-left: 0px;
         align-items: center;
-        
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 0;
+        gap: 15px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-bottom: 20px;
     }
 
+    .header ul.active {
+        display: flex;
+    }
 
     .header button {
-        margin-left: 50px;
-        margin-top: 20px;
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
     }
 
     .Discover {
         font-size: 8px;
         left: 0px;
-        margin-top: 170px;
+        top: 220px;
+        /* Moved up from 330px or previous 170px margin */
     }
 
     .Discover h1 {
-        margin-left: 80px;
-        margin-top: 90px;
-        font-size: 70px;
+        margin-left: 20px;
+        /* Adjusted from 80px */
+        margin-top: 0px;
+        /* Adjusted from 90px */
+        font-size: 50px;
+        /* Adjusted from 70px */
     }
 
     .Discover p {
-        margin-left: 16px;
+        margin-left: 25px;
         font-size: 13px;
     }
 
     .Discover button {
-        margin-left: 80px;
-        width: 200px;
-        height: 50px;
-
+        margin-left: 40px;
+        /* Adjusted from 80px */
+        width: 180px;
+        height: 45px;
+        margin-top: 20px;
     }
 
     .options {
-        height: 550px;
-        width: 240px;
-        left: 65px;
-        margin-top: 100px;
+        height: auto;
+        width: 90%;
+        left: 5%;
+        top: 600px;
+        /* Moved up from 815px */
+        padding-bottom: 20px;
     }
 
     .choose {
         flex-direction: column;
-
     }
 
     .section-3 {
         margin-top: 400px;
-
     }
 
     .images {
@@ -830,7 +1062,6 @@ body {
         width: 300px;
         height: 200px;
     }
-
 
     .images2 {
         flex-direction: column;
@@ -848,63 +1079,83 @@ body {
         height: 50px;
     }
 
-
     .section4 {
         height: 1200px;
-
     }
 
     .icon1 {
         margin-left: 50px;
     }
 
-    .icon2 {}
-
     .what-they-said {
         font-size: 10px;
-
     }
 
     .big-liido {
         flex-direction: column;
-
-
     }
 
     .small-text {
         font-size: 15px;
         width: 250px;
         height: auto;
-
     }
 
+    .second-cover-image {
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-cover-image img {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 0;
+    }
 
     .background-text {
-        left: 67px;
-        top: 4200px;
-        width: 235px;
-        height: 300px;
-        font-size: 7px;
+        position: relative;
+        top: -120px;
+        /* Center and overlap image */
+        left: 0;
+        width: 85%;
+        height: auto;
+        padding: 20px;
+        font-size: 14px;
+        background-color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        z-index: 10;
+        margin-bottom: -80px;
+        /* Reduce gap to footer */
     }
 
-    .left-icon {
-        top: 4300px;
-        left: 324px;
-        width: 50px;
-        height: 50px;
+    .flex-icon {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        pointer-events: none;
     }
 
+    .left-icon,
     .right-icon {
-        top: 4300px;
-        left: 0px;
+        position: static;
         width: 50px;
         height: 50px;
-
+        font-size: 28px;
+        pointer-events: auto;
     }
-
 
     .footer {
-        height: 920px;
+        height: auto;
+        margin-top: 20px;
+        padding-bottom: 40px;
     }
 
     .footer2 {
@@ -914,14 +1165,9 @@ body {
         align-items: center;
     }
 
-
     .text2 p {
         padding-left: 50px;
     }
-
-
-
-
 }
 
 
@@ -1005,16 +1251,16 @@ body {
 }
 
 
-.text-flex1 img{
+.text-flex1 img {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.text-flex1 img:hover{
+.text-flex1 img:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1070,16 +1316,16 @@ body {
 }
 
 
-.about-text1{
+.about-text1 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.about-text1:hover{
+.about-text1:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1265,16 +1511,16 @@ body {
 }
 
 
-.africa{
+.africa {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.africa:hover{
+.africa:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1335,16 +1581,16 @@ body {
 }
 
 
-.place-images-text4{
+.place-images-text4 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text4:hover{
+.place-images-text4:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .place-images-text4 button {
@@ -1378,16 +1624,16 @@ body {
 }
 
 
-.place-images-text5{
+.place-images-text5 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text5:hover{
+.place-images-text5:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1423,16 +1669,16 @@ body {
 }
 
 
-.place-images-text6{
+.place-images-text6 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text6:hover{
+.place-images-text6:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1468,16 +1714,16 @@ body {
 
 
 
-.place-images-text7{
+.place-images-text7 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text7:hover{
+.place-images-text7:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1514,16 +1760,16 @@ body {
 
 
 
-.place-images-text8{
+.place-images-text8 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text8:hover{
+.place-images-text8:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1559,16 +1805,16 @@ body {
 }
 
 
-.place-images-text9{
+.place-images-text9 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text9:hover{
+.place-images-text9:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1603,16 +1849,16 @@ body {
 }
 
 
-.place-images-text10{
+.place-images-text10 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text10:hover{
+.place-images-text10:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1648,16 +1894,16 @@ body {
 
 
 
-.place-images-text11{
+.place-images-text11 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text11:hover{
+.place-images-text11:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -1693,16 +1939,16 @@ body {
 }
 
 
-.place-images-text12{
+.place-images-text12 {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.place-images-text12:hover{
+.place-images-text12:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -2366,16 +2612,16 @@ body {
 }
 
 
-.contact-form button{
+.contact-form button {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.contact-form button:hover{
+.contact-form button:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -2498,16 +2744,16 @@ body {
 }
 
 
-.shadow{
+.shadow {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.shadow:hover{
+.shadow:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .text8 {
@@ -2746,21 +2992,21 @@ body {
 }
 
 
-.pay-now button{
+.pay-now button {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.pay-now button a{
+.pay-now button a {
     text-decoration: none;
     color: white;
 }
 
-.pay-now button:hover{
+.pay-now button:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -2828,16 +3074,16 @@ body {
 }
 
 
-.sing-bac button{
+.sing-bac button {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.sing-bac button:hover{
+.sing-bac button:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 .sing-bac button a {
@@ -2859,16 +3105,16 @@ body {
 
 
 
-.sing-bac p{
+.sing-bac p {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
-    
+
 }
 
-.sing-bac p:hover{
+.sing-bac p:hover {
     cursor: pointer;
     transform: translateY(-5px) scale(1.05);
-   
+
 }
 
 
@@ -2885,98 +3131,99 @@ body {
 
 
 
-@media (max-width: 760px){
-    .icon{
+@media (max-width: 760px) {
+    .icon {
         margin-left: -478px;
         width: auto;
         top: 50px;
-}
+    }
 
-.icon img{
-    margin-left: 40px;
-}
+    .icon img {
+        margin-left: 40px;
+    }
 
-.icon p{
-    margin-left: 50px;
-}
+    .icon p {
+        margin-left: 50px;
+    }
 
-.icon button{
-    margin-left: 50px;
-}
+    .icon button {
+        margin-left: 50px;
+    }
 }
 
 
 .icon {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 40px 50px;
-  width: 360px;
-  margin-top: 50px;
-  position: absolute;
-  left: 430px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px 50px;
+    width: 360px;
+    margin-top: 50px;
+    position: absolute;
+    left: 430px;
 }
 
 .icon img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border: 4px solid #FF5403;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #FF5403;
 }
 
 .succ {
-  color: #2e7d32;
-  font-size: 1.6em;
-  font-weight: 600;
-  margin: 10px 0;
+    color: #2e7d32;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
 .icon p {
-  color: #555;
-  font-size: 14px;
-  line-height: 1.5;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .order-summary {
-  background-color: #f5f5f5;
-  padding: 15px 20px;
-  margin-top: 25px;
-  border-radius: 12px;
-  text-align: left;
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    text-align: left;
 }
 
 .course-details,
 .total-amount {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
 .total-amount p:last-child {
-  font-weight: 600;
-  color: #041562;
+    font-weight: 600;
+    color: #041562;
 }
 
 .icon button {
-  margin-top: 25px;
-  background-color: #FF5403;
-  border: none;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.3s ease;
+    margin-top: 25px;
+    background-color: #FF5403;
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
 }
 
 .icon button:hover {
-  background-color: #041562;
+    background-color: #041562;
 }
-button a{
+
+button a {
     color: #fff;
     text-decoration: none;
 }
